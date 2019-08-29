@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+body{
+    font-family: Arial;
+}
+
+#background1{
+    height: 800px;
+    background-color: gray;
+}
+
+.topBar{
+    background-color: blueviolet;
+    width: 99vw;
+    position: fixed;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+.topBar ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    list-style: none;
+}
+
+
+.topBar ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 100px;
+    font-size: 2em;
+}
+
+.topBar ul li:hover{
+    background-color: black;
+    transition: .5s ease;
+}
+
+.topBarElements{
+    display: inline;
+}
+
+#aboutus{
+    border-style: solid;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    margin: 100px 50px;
+    width: 50%;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: 1;
+    color: white;
+}
+
+#aboutus:hover{
+    transform: scale(1.1);
+}
+
+#pcimg{
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+}
+
+#background2{
+    width: auto;
+    height: 800px;
+    background-image: url('https://code.visualstudio.com/assets/blogs/2017/02/12/code_lens.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.webdev{
+    width: 220px;
+    height: 300px;
+    border: 3px blueviolet;
+    background-color: blueviolet;
+    border-radius: 15px;
+    position: relative;
+    top: 150px;
+    left: 100px;
+    text-align: center;
+    display: inline-block;
+    margin: 100px;
+    box-align: center;
+    margin-right: auto;
+    transition: 1s;
+}
+
+.webdev:hover{
+    transform: scale(1.5);
+}
+
+.webdev p {
+    font-size: 15px;
+}
+
+.webdev div img{
+    width: 2px;
+    height: auto;
+    margin: 10px;
+    transition: 1s;
+}
+
+.webdev div img:hover{
+    transform: rotateY(180deg);
+}
+
+button{
+    border: 1px solid blueviolet;
+    border-radius: 15px;
+}
+
+.webdev button{
+    color: white;
+    background-color: rgb(66, 66, 66);
+}
+
+.item1{grid-area: header;}
+.item2{grid-area: menu;}
+.item3{grid-area: main;}
+.item4{grid-area: right;}
+.item5{grid-area: footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: black;
+    padding: 3px;
+    height: 800px;
+}
+
+.grid-container .item1{
+    background-image: url('https://hackernoon.com/hn-images/1*TYAzzTJ60x-qg5N81ElU9A.png');
+    background-size: cover;
+}
+
+.grid-container .item2{
+    background-image: url('https://hbfs.files.wordpress.com/2009/08/code-1.png');
+    background-size: cover;
+}
+
+.grid-container .item3{
+    background-image: url('https://images3.alphacoders.com/813/813087.jpg');
+    background-size: cover;
+}
+
+.grid-container .item4{
+    background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Debian-Background-Free-Download-PIC-WPB0010253.jpg');
+    background-size: cover;
+}
+
+.grid-container .item5{
+    background-image: url('https://wallpapercave.com/wp/A2sYzHc.jpg');
+    background-size: cover;
+}
+
+.grid-container div{
+    text-align: center;
+    background-color: white; 
+}
+
+.feedback{
+    width: auto;
+    height: 700px;
+    background-color: rgba(133, 133, 133, 0.815);
+}
+
+.feedback button{
+    color: white;
+    background-color: blueviolet;
+    width: 75px;
+}
+
+.formula{
+    width: 500px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 100px;
+
+}
+
+.formula fieldset form input, .formula fieldset form textarea{
+    background-color: blueviolet;
+    border: solid 1px blueviolet;
+    border-radius: 10px;
+}
+
+.formula fieldset form{
+    margin: 50px;
+}
+
+
+::placeholder{
+    color: white;
+}
