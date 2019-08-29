@@ -19,7 +19,7 @@ body{
     width: 99vw;
     position: fixed;
     z-index: 100;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .topBar ul{
@@ -41,11 +41,50 @@ body{
 
 .topBar ul li:hover{
     background-color: black;
-    transition: .5s ease;
+    transition: 1s ease;
+}
+
+.topBar:hover {
+    opacity: 1;
 }
 
 .topBarElements{
     display: inline;
+}
+
+.hovers{
+    margin: auto;
+}
+
+.home-hover, .about-hover, .gallery-hover, .feedback-hover{
+    width: 0;
+    background-color: blueviolet;
+    margin: auto;
+    transition: 1s;
+}
+
+#Home:hover > .home-hover{
+    width: 100%;
+    height: 3px;
+    transition: 1s;
+}
+
+#About:hover > .about-hover{
+    width: 100%;
+    height: 3px;
+    transition: 1s;
+}
+
+#Gallery:hover > .gallery-hover{
+    width: 100%;
+    height: 3px;
+    transition: 1s;
+}
+
+#Feedback:hover > .feedback-hover{
+    width: 100%;
+    height: 3px;
+    transition: 1s;
 }
 
 #aboutus{
@@ -209,6 +248,10 @@ button{
     margin: 50px;
 }
 
+fieldset{
+    border-radius: 20px;
+    background-color:  violet;
+}
 
 ::placeholder{
     color: white;
